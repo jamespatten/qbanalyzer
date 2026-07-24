@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QB Analyzer — Patten Studio</title>
+<style>
+  :root{
+    --paper:#FAFAF8;
+    --ink:#16181D;
+    --slate:#5A6070;
+    --rule:#E3E2DC;
+    --accent:#2F3B8C;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif;
+    font-size:17px;
+    line-height:1.65;
+  }
+  .mono{
+    font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+    font-size:11px;
+    letter-spacing:.11em;
+    text-transform:uppercase;
+    color:var(--slate);
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 28px}
+  header{border-bottom:1px solid var(--rule);padding:26px 0}
+  header .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap}
+  .org{font-weight:600;letter-spacing:.01em}
+  main{padding:72px 0 96px}
+  h1{
+    font-size:clamp(34px,6vw,54px);
+    line-height:1.08;
+    font-weight:600;
+    letter-spacing:-.02em;
+    margin:14px 0 0;
+    max-width:16ch;
+  }
+  .lede{
+    font-size:20px;
+    color:var(--slate);
+    max-width:60ch;
+    margin:26px 0 0;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:200px 1fr;
+    gap:40px;
+    border-top:1px solid var(--rule);
+    padding:34px 0;
+  }
+  .grid + .grid{border-top:1px solid var(--rule)}
+  .sections{margin-top:64px}
+  .grid h2{font-size:17px;font-weight:600;margin:0}
+  .grid p{margin:0;color:var(--slate);max-width:62ch}
+  .grid ul{margin:0;padding-left:20px;color:var(--slate);max-width:62ch}
+  .grid li{margin:0 0 6px}
+  .docs{
+    margin-top:56px;
+    border-top:1px solid var(--rule);
+    padding-top:34px;
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  a.doc{
+    display:block;
+    text-decoration:none;
+    color:var(--ink);
+    border:1px solid var(--rule);
+    background:#fff;
+    padding:18px 22px;
+    min-width:230px;
+    transition:border-color .15s ease;
+  }
+  a.doc:hover,a.doc:focus-visible{border-color:var(--accent)}
+  a.doc:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  a.doc span{display:block;margin-top:5px;font-weight:600}
+  footer{border-top:1px solid var(--rule);padding:26px 0 60px}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  @media (max-width:720px){
+    .grid{grid-template-columns:1fr;gap:12px}
+    main{padding:52px 0 72px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="org">Patten Studio</div>
+    <div class="mono">Internal Tools</div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="mono">QB Analyzer · v1.0</div>
+    <h1>An internal reporting and analysis tool.</h1>
+    <p class="lede">
+      QB Analyzer reads Patten Studio's own accounting records from QuickBooks Online so the
+      studio can analyze them, report on them, and keep an archive. It is operated by Patten
+      Studio staff, for Patten Studio records only.
+    </p>
+
+    <div class="sections">
+      <div class="grid">
+        <h2>Who uses it</h2>
+        <p>
+          Employees and contractors of Patten Studio who are authorized to handle the
+          studio's financial records. The tool is not distributed, sold, or made available
+          to anyone outside the studio, and it has no public sign-up.
+        </p>
+      </div>
+
+      <div class="grid">
+        <h2>What it does</h2>
+        <ul>
+          <li>Reads the studio's own QuickBooks Online company data through the Intuit API.</li>
+          <li>Produces internal reports and analysis of the studio's financial records.</li>
+          <li>Writes a local archive of that data for record-keeping.</li>
+        </ul>
+      </div>
+
+      <div class="grid">
+        <h2>What it doesn't do</h2>
+        <p>
+          It does not modify QuickBooks data, connect to any customer's books, transmit
+          records to third parties, or serve advertising. Access is read-only on the
+          QuickBooks side.
+        </p>
+      </div>
+    </div>
+
+    <div class="docs">
+      <a class="doc" href="eula.html">
+        <span class="mono">Document 01</span>
+        <span>End User License Agreement</span>
+      </a>
+      <a class="doc" href="privacy.html">
+        <span class="mono">Document 02</span>
+        <span>Privacy Policy</span>
+      </a>
+      <a class="doc" href="disconnect.html">
+        <span class="mono">Document 03</span>
+        <span>Disconnecting the app</span>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="mono">Patten Studio · [CITY, STATE]</div>
+    <div class="mono">[CONTACT EMAIL]</div>
+  </div>
+</footer>
+
+</body>
+</html>

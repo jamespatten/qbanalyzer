@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disconnecting QB Analyzer — Patten Studio</title>
+<style>
+  :root{
+    --paper:#FAFAF8;
+    --ink:#16181D;
+    --slate:#5A6070;
+    --rule:#E3E2DC;
+    --accent:#2F3B8C;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif;
+    font-size:17px;
+    line-height:1.68;
+  }
+  .mono{
+    font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+    font-size:11px;
+    letter-spacing:.11em;
+    text-transform:uppercase;
+    color:var(--slate);
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 28px}
+  header{border-bottom:1px solid var(--rule);padding:26px 0}
+  header .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap}
+  .org{font-weight:600}
+  header a{color:var(--slate);text-decoration:none}
+  header a:hover{color:var(--accent)}
+  .title{padding:64px 0 40px;border-bottom:1px solid var(--rule)}
+  h1{font-size:clamp(30px,5vw,44px);line-height:1.1;font-weight:600;letter-spacing:-.02em;margin:14px 0 0}
+  section{
+    display:grid;
+    grid-template-columns:76px 1fr;
+    gap:32px;
+    padding:34px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  section h2{font-size:18px;font-weight:600;margin:0 0 10px}
+  section p{margin:0 0 14px;max-width:66ch}
+  section p:last-child{margin-bottom:0}
+  section ol{margin:0 0 14px;padding-left:20px;max-width:66ch}
+  section li{margin:0 0 8px}
+  .num{color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums}
+  a{color:var(--accent)}
+  footer{padding:34px 0 72px}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  @media (max-width:720px){section{grid-template-columns:1fr;gap:8px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="org">Patten Studio</div>
+    <div class="mono"><a href="index.html">QB Analyzer</a></div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="title">
+    <div class="mono">Document 03 · Disconnecting</div>
+    <h1>Disconnecting<br>QB Analyzer</h1>
+  </div>
+
+  <section>
+    <div class="num mono">01</div>
+    <div>
+      <h2>Revoke access in QuickBooks</h2>
+      <ol>
+        <li>Sign in to QuickBooks Online as an administrator.</li>
+        <li>Open Settings (the gear icon), then Apps, then Manage.</li>
+        <li>Find QB Analyzer in the list of connected apps.</li>
+        <li>Choose Disconnect and confirm.</li>
+      </ol>
+      <p>
+        Access ends immediately. The Software can no longer read the company's data unless it
+        is authorized again.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="num mono">02</div>
+    <div>
+      <h2>What happens to stored data</h2>
+      <p>
+        Records already archived by the Studio remain in the Studio's own systems, where they
+        are kept for the record-retention periods described in the
+        <a href="privacy.html">Privacy Policy</a>. Authentication tokens are deleted once the
+        connection is revoked.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="num mono">03</div>
+    <div>
+      <h2>Requesting deletion</h2>
+      <p>
+        To request deletion of archived data, contact Patten Studio at [CONTACT EMAIL].
+        Requests are honored except where the Studio is legally required to retain the
+        records.
+      </p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="mono">Patten Studio · QB Analyzer v1.0</div>
+    <div class="mono"><a href="index.html">← Overview</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
